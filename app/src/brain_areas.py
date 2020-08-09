@@ -65,7 +65,7 @@ AREA_SCig = "SCig"
 AREA_SCsg = "SCsg"
 AREA_ZI = "ZI"
 
-# basal ganglia 
+# basal ganglia
 AREA_ACB = "ACB"
 AREA_CP = "CP"
 AREA_GPe = "GPe"
@@ -83,3 +83,28 @@ AREA_BMA = "BMA"
 AREA_EP = "EP"
 AREA_EPd = "EPd"
 AREA_MEA = "MEA"
+
+# Areas selected based on selectivity reported in paper
+AREAS_VISUAL = [
+    AREA_VISp,
+    AREA_VISl,
+    AREA_VISpm,
+    AREA_VISam,
+    AREA_CP,
+    AREA_LD,
+    AREA_SCs,
+]
+
+AREAS_MOTOR = [
+    AREA_MOp,
+    AREA_MOs,
+]
+
+AREAS_ACTION = [
+    AREA_SSp,
+    AREA_SNr,
+    AREA_APN,
+    AREA_PAG,
+    AREA_ZI,
+    *AREAS_MOTOR,
+]

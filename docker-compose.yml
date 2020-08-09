@@ -5,6 +5,7 @@ services:
   notebook:
     image: jupyter/datascience-notebook
     volumes:
+      - ./app:/home/jovyan/work/app
       - ./data:/home/jovyan/work/data
       - ./notebooks:/home/jovyan/work/notebooks
     ports:

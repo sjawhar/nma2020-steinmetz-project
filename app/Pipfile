@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+
+[dev-packages]
+black = "==19.10b0"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+format = "black --verbose --target-version py37 --exclude /(\\.pytest_cache|\\.ipynb_checkpoints)/ ."
+lint = "pipenv run format --check"
